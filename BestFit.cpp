@@ -34,7 +34,7 @@ int main()
     {
         int min_frag=9999;
         int in_frag=0;
-        int index;
+        int index=-1;
         for(int j=0; j<n; j++)
         {
             if(capa[j] >= pro[i] && alloc[j]== -1)
@@ -47,7 +47,8 @@ int main()
                 }
             }
         }
-        alloc[index]= pro[i];
+        if(index!=-1)
+          alloc[index]= pro[i];
     }
 
 cout<< "\n";
