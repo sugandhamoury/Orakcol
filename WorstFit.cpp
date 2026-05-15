@@ -34,8 +34,8 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        int max_frag=0;
-        int index=0;
+        int max_frag=-1;
+        int index=-1;
         int frag=0;
 
         for(int j=0; j<n; j++)
@@ -51,7 +51,9 @@ int main()
                 }
             }
         }
-        alloc[index]=pro[i];
+        if(index=-1){
+          alloc[index]=pro[i];
+        }
     }
     cout<< "\n";
 
